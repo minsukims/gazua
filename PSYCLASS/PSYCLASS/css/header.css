@@ -1,0 +1,120 @@
+header{
+    height: 150px;
+    display: flex;
+    border-bottom: 1px solid lightgray;
+    justify-content: space-around;
+    padding-top: 35px;
+    position: relative;
+    /* left:150px; */
+    z-index: 2;
+}
+.left--header{
+    display: flex;
+    justify-content: space-around;
+}
+.left--header>img{
+    height: 80px;
+    width: 300px;
+}
+.left--header>nav{
+    /* border: 1px solid; */
+    height: 100px;
+    margin-left: 20px;
+
+}
+.left--header>nav>.first--depth{
+    display: flex;
+    /* border: 1px solid; */
+    height: 80px;
+    line-height: 80px;
+    font-size: 23px;
+}
+.left--header>nav>.first--depth>li{
+    margin: 0px 15px;
+    position: relative;
+    
+    
+}
+.left--header>nav>.first--depth>li>a{}
+.left--header>nav>.first--depth>li>.second--depth{
+    display: none;
+    font-size: 20px;
+    position: absolute;
+    left: -30px;
+    border-radius: 25px;
+}
+.left--header>nav>.first--depth>li>a{
+    display: block;
+    background-color: aliceblue;
+    width: 150px;
+    text-align: center;    
+    pointer-events: auto;
+    opacity: 0.8;
+}
+.left--header>nav>.first--depth>li:nth-of-type(3):hover>.second--depth{
+    display:block;
+    left:30px;
+    position: absolute;
+    text-align: center;
+    
+    
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+
+.left--header>nav>.first--depth>li:nth-of-type(3)>ul>li>a:nth-child(1){
+    background-color: aliceblue;
+    animation: fadeIn 3s ease-in-out;
+    z-index: 5;
+
+    
+    
+}
+
+.left--header>nav>.first--depth>li>.second--depth>li{}
+.left--header>nav>.first--depth>li>.second--depth>li>a{}
+.right--header{
+    padding-top: 5px;
+    display: flex;
+   
+    
+}
+.right--header>form>input{
+    width: 300px;
+    height: 60px;
+    border-radius: 20px;
+    margin-top: 8px;
+    position: absolute;
+}
+.right--header>form{
+    position: relative;
+    /* display: block; */
+    width: 300px;
+    height: 60px;
+}
+.right--header>form>button{
+    position: absolute;
+    left: 82%;
+    top: 25px;
+    border: 0px;
+    background-color: white;
+}
+.right--header>form>button>span{
+    border: 0px;
+}
+.right--header>.login{
+    /* border: 1px solid black; */
+    margin-left: 15px;
+    height: 70px;
+    line-height: 70px;
+    /* display: block; */
+    width: 300px;
+    height: 60px;
+}
+.right--header>.login>button{
+    width: 100px;
+    height: 55px;
+}
